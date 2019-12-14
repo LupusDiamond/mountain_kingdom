@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mountain Kingdom</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="style/index.css">
 </head>
-<body>
+<body class="grey darken-4">
   <nav>
     <div class="nav-wrapper grey darken-4">
-      <a href="#!" class="brand-logo"><i class="material-icons">landscape</i>Mountain Kingdom</a>
+      <a href="#!" class="brand-logo"><i class="material-icons hide-on-med-and-down">landscape</i>Mountainia</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="pages/store.html">Store</a></li>
@@ -30,23 +31,46 @@
     <li><a href="pages/about.html">About Us</a></li>
   </ul>
 
- <div class="contain">
+
+  <!-- Content Start -->
+
+  <div class="contain">
+    <p  data-aos="fade-down">Buy Mountains from Home! <br> <a class="waves-effect grey darken-4 btn-large">Explore</a></p>
+  </div>
+
+ 
+  <div class="container">
+    <h1 class="white-text">Some Reviews</h1>
+    <blockquote class="review1 grey darken-3 white-text">
+    <h6>Lupus Diamond aka Eclipse</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Rishi for telling me about this website, Now i know how it feels to be broke :D</p>
+   </blockquote>
+
+    <blockquote class="review1 grey darken-3 white-text">
+      <h6>Sean</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Lupus for telling me about this website, Now i know how it feels to be broke :D</p>
+    </blockquote>
+
+    <blockquote class="review1 grey darken-3 white-text">
+      <h6>Matt</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Sean for telling me about this website, Now i know how it feels to be broke :D</p>
+    </blockquote>
+
+    <blockquote class="review1 grey darken-3 white-text">
+      <h6>Judge Dredd</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Matt for telling me about this website, Now i know how it feels to be broke :D</p>
+    </blockquote>
+
+    <blockquote class="review1 grey darken-3 white-text">
+      <h6>Rishi</h6><p class="grey-text darken-3-text"> Meh, Kids these days are so stupid, they fell for my fake website ; Now i have all of their  money. Dumb brats.</p>
+    </blockquote>
+
+  </div>
+  
+
+  <footer class="page-footer grey darken-3 white-text center-align"> <p> &copy; 2020 Eclipse da Dude's Mountania</p>  </footer>
 
 
-
- </div>
-
-
-
-
-
-
-
-
-
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
+    AOS.init();
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
@@ -63,5 +87,7 @@
   });
 
     </script>
+
+    
 </body>
 </html>

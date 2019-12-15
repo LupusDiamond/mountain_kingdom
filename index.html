@@ -1,67 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mountain Kingdom</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
-  <nav>
-    <div class="nav-wrapper grey darken-4">
-      <a href="#!" class="brand-logo"><i class="material-icons">landscape</i>Mountain Kingdom</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="pages/store.html">Store</a></li>
-        <li><a href="pages/cart.html">Cart</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-        <li><a href="pages/about.html">About Us</a></li>
-      </ul>
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mountain Kingdom</title>
+    <!-- Scripts -->
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="pages/store.html">Store</a></li>
-    <li><a href="pages/cart.html">Cart</a></li>
-    <li><a href="pages/contact.html">Contact</a></li>
-    <li><a href="pages/about.html">About Us</a></li>
-  </ul>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
- <div class="contain">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body id="bd">
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
 
+    <div class="contain"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
- </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+      });
 
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
 
-
-
-
-
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems);
-    });
-
-    
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems, options);
-  });
-
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".parallax");
+        var instances = M.Parallax.init(elems, options);
+      });
     </script>
-</body>
+    <script>
+      $(function() {
+        $("#nav-placeholder").load("./src/nav.html");
+      });
+    </script>
+  </body>
 </html>

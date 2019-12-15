@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Scripts -->
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -22,6 +26,8 @@
     <title>Store | Mountain Kingdom</title>
   </head>
   <body>
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
     <div class="container">
       <h1>Store</h1>
       <div class="r-container">
@@ -29,6 +35,10 @@
         <div class="r2 hide-on-med-and-down"></div>
         <div class="r3 hide-on-med-and-down"></div>
       </div>
-      
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("./src/nav.html");
+        });
+      </script>
   </body>
 </html>

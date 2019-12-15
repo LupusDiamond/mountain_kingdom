@@ -14,3 +14,8 @@
 .r3 {
   flex: 1;
 }
+
+.search-bar {
+  margin: 30px 0;
+  border-radius: 10px;
+}

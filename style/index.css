@@ -44,7 +44,6 @@ body {
   padding: 0.4em 0.1em;
 }
 
-
 @media screen and (max-width: 1024px) {
   .contain p {
     font-size: 12vw;

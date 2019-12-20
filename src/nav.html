@@ -11,24 +11,28 @@
     <ul class="right hide-on-med-and-down">
       <li>
         <a
+          id="a-store"
           href="https://lupusdiamond.github.io/mountain_kingdom/pages/store.html"
           >Store</a
         >
       </li>
       <li>
         <a
+          id="a-cart"
           href="https://lupusdiamond.github.io/mountain_kingdom/pages/cart.html"
           >Cart</a
         >
       </li>
       <li>
         <a
+          id="a-contact"
           href="https://lupusdiamond.github.io/mountain_kingdom/pages/contact.html"
           >Contact</a
         >
       </li>
       <li>
         <a
+          id="a-about"
           href="https://lupusdiamond.github.io/mountain_kingdom/pages/about.html"
           >About Us</a
         >
@@ -39,22 +43,30 @@
 
 <ul class="sidenav" id="mobile-demo">
   <li>
-    <a href="https://lupusdiamond.github.io/mountain_kingdom/pages/store.html"
+    <a
+      id="s-store"
+      href="https://lupusdiamond.github.io/mountain_kingdom/pages/store.html"
       ><i class="material-icons">attach_money</i> Store</a
     >
   </li>
   <li>
-    <a href="https://lupusdiamond.github.io/mountain_kingdom/pages/cart.html"
+    <a
+      id="s-cart"
+      href="https://lupusdiamond.github.io/mountain_kingdom/pages/cart.html"
       ><i class="material-icons">shopping_cart</i> Cart</a
     >
   </li>
   <li>
-    <a href="https://lupusdiamond.github.io/mountain_kingdom/pages/contact.html"
+    <a
+      id="s-contact"
+      href="https://lupusdiamond.github.io/mountain_kingdom/pages/contact.html"
       ><i class="material-icons">perm_phone_msg</i> Contact</a
     >
   </li>
   <li>
-    <a href="https://lupusdiamond.github.io/mountain_kingdom/pages/about.html"
+    <a
+      id="s-about"
+      href="https://lupusdiamond.github.io/mountain_kingdom/pages/about.html"
       ><i class="material-icons">people</i> About Us</a
     >
   </li>
@@ -64,6 +76,23 @@
   $(document).ready(function() {
     $(".sidenav").sidenav();
   });
+
+  if (document.querySelector("#about")) {
+    document.querySelector("#a-about").className += "gold-text";
+    document.querySelector("#s-about").className += "active-sidenav";
+  }
+  if (document.querySelector("#cart")) {
+    document.querySelector("#a-cart").className += "gold-text";
+    document.querySelector("#s-cart").className += "active-sidenav";
+  }
+  if (document.querySelector("#contact")) {
+    document.querySelector("#a-contact").className += "gold-text";
+    document.querySelector("#s-contact").className += "active-sidenav";
+  }
+  if (document.querySelector("#store")) {
+    document.querySelector("#a-store").className += "gold-text";
+    document.querySelector("#s-store").className += "active-sidenav";
+  }
 </script>
 
 <style>
@@ -71,5 +100,18 @@
     .nav-wrapper {
       padding: 0 20vh;
     }
+  }
+
+  .gold-text {
+    color: #ffd700 !important;
+  }
+
+  .active-sidenav {
+    background: #212121 !important;
+    color: #ffd700 !important;
+  }
+
+  .active-sidenav i {
+    color: #ffd700 !important;
   }
 </style>

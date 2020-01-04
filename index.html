@@ -10,12 +10,12 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="src/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/Logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -26,47 +26,46 @@
     <!-- Navigation -->
     <div id="nav-placeholder"></div>
 
-   
-    
-    
-  <!-- Content Start -->
+    <!-- Content Start -->
 
-  <div class="contain">
-    <p  data-aos="fade-down">Buy Mountains from Home! <br> <a href="#explore" class="waves-effect grey darken-4 btn-large">Explore</a></p>
-  </div>
+    <div class="contain">
+      <p data-aos="fade-down">
+        Buy Mountains from Home! <br />
+        <a href="#explore" class="waves-effect grey darken-4 btn-large"
+          >Explore</a
+        >
+      </p>
+    </div>
 
- 
-  <div class="container">
-    <a name="explore"></a>
-    <h1 class="white-text" data-aos="fade-up">Some Reviews</h1>
-    <blockquote class="review1 grey darken-3 white-text">
-    <h6>Lupus Diamond aka Eclipse</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Rishi for telling me about this website, Now i know how it feels to be broke :D</p>
-   </blockquote>
+    <!-- Reviews -->
 
-    <blockquote class="review1 grey darken-3 white-text" data-aos="fade-right">
-      <h6>Sean</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Lupus for telling me about this website, Now i know how it feels to be broke :D</p>
-    </blockquote>
-
-    <blockquote class="review1 grey darken-3 white-text" data-aos="fade-right">
-      <h6>Matt</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Sean for telling me about this website, Now i know how it feels to be broke :D</p>
-    </blockquote>
-
-    <blockquote class="review1 grey darken-3 white-text" data-aos="fade-right">
-      <h6>Judge Dredd</h6><p class="grey-text darken-3-text"> I loved the experience on this Website, I bought 2 Mountains, One for my family and one for myself. Gotta say both of them were real biiiiiiiiig and i got em for a really cheap price. <br> Also, I gotta thank Matt for telling me about this website, Now i know how it feels to be broke :D</p>
-    </blockquote>
-
-    <blockquote class="review1 grey darken-3 white-text" data-aos="fade-right">
-      <h6>Rishi</h6><p class="grey-text darken-3-text"> Meh, Kids these days are so stupid, they fell for my fake website ; Now i have all of their  money 🤣</p>
-    </blockquote>
-
-  </div>
-  
+    <div class="container">
+      <a name="explore"></a>
+      <h1 class="white-text" data-aos="fade-up">Some Reviews</h1>
+      <div class="carousel">
+        <a href="#one" class="carousel-item">
+          <img class="circle" src="./src/rev-4.jpg" />
+          <span>Carina Robertz</span>
+        </a>
+        <a href="#two" class="carousel-item">
+          <img class="circle" src="./src/rev-2.jpg" />
+          <span>John Gotham</span>
+        </a>
+        <a href="#three" class="carousel-item">
+          <img class="circle" src="./src/rev-3.jpg" />
+          <span>Martina Gomez</span>
+        </a>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script> 
+      $(document).ready(function() {
+        $(".carousel").carousel();
+      });
+    </script>
     <script>
       $(document).ready(function() {
         $("#nav-placeholder").load("./src/nav.html");

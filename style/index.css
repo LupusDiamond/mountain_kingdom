@@ -56,3 +56,29 @@ body {
     top: 20%;
   }
 }
+
+.crimg-container {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.crimg-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.circle {
+  /*border: 1px solid rgba(255, 255, 255, 0.1); */
+  box-shadow: 0px 0px 26px 10px rgba(0, 0, 0, 0.27);
+}
+
+.carousel-item span {
+  color: white;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 26px;
+  opacity: 0.7;
+}

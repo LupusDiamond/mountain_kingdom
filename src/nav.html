@@ -3,7 +3,7 @@
     <a
       href="https://lupusdiamond.github.io/mountain_kingdom/index.html"
       class="brand-logo"
-      ><i class="material-icons">landscape</i>Mountain <span class="hide">Kingdom</span></a
+      ><i class="material-icons">landscape</i>Mountain Kingdom</a
     >
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"
       ><i class="material-icons">menu</i></a
@@ -72,6 +72,28 @@
   </li>
 </ul>
 
+<style>
+  @media screen and (min-width: 990px) {
+    .nav-wrapper {
+      padding: 0 20vh;
+    }
+  }
+
+  .gold-text {
+    color: #ffd700 !important;
+  }
+
+  .active-sidenav {
+    background: #212121 !important;
+    color: #ffd700 !important;
+  }
+
+  .active-sidenav i {
+    color: #ffd700 !important;
+  }
+
+</style>
+
 <script>
   $(document).ready(function() {
     $(".sidenav").sidenav();
@@ -94,30 +116,3 @@
     document.querySelector("#s-store").className += "active-sidenav";
   }
 </script>
-
-<style>
-  @media screen and (min-width: 990px) {
-    .nav-wrapper {
-      padding: 0 20vh;
-    }
-  }
-
-  .gold-text {
-    color: #ffd700 !important;
-  }
-
-  .active-sidenav {
-    background: #212121 !important;
-    color: #ffd700 !important;
-  }
-
-  .active-sidenav i {
-    color: #ffd700 !important;
-  }
-
-  @media screen and (max-width: 700px) {
-    .hide {
-      display: none;
-    }
-  }
-</style>

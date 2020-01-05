@@ -37,6 +37,7 @@ body {
 
 .container {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .container h6,

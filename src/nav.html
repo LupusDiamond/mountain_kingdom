@@ -3,7 +3,7 @@
     <a
       href="https://lupusdiamond.github.io/mountain_kingdom/index.html"
       class="brand-logo"
-      ><i class="material-icons">landscape</i>Mountain</a
+      ><i class="material-icons">landscape</i>Mountain <span class="hide">Kingdom</span></a
     >
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"
       ><i class="material-icons">menu</i></a
@@ -113,5 +113,11 @@
 
   .active-sidenav i {
     color: #ffd700 !important;
+  }
+
+  @media screen and (max-width: 700px) {
+    .hide {
+      display: none;
+    }
   }
 </style>

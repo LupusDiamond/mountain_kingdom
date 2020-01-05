@@ -87,3 +87,21 @@ body {
   font-size: 32px;
   color: gold;
 }
+
+.carousel-item span {
+  opacity: 0;
+  transition: all 650ms ease-in-out;
+}
+
+.active span {
+  transition: all 650ms ease-in-out;
+  opacity: 1;
+}
+
+.stars {
+  color: white;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  opacity: 0.45;
+}

@@ -43,15 +43,27 @@
       <a name="explore"></a>
       <h1 class="white-text" data-aos="fade-up">Some Reviews</h1>
       <div class="carousel">
-        <a href="#one" class="carousel-item">
+        <a
+          href="#one"
+          class="carousel-item"
+          onclick="changeReview('This is the best website ever!')"
+        >
           <img class="circle" src="./src/rev-4.jpg" />
           <span>Carina Robertz</span>
         </a>
-        <a href="#two" class="carousel-item">
+        <a
+          href="#two"
+          class="carousel-item"
+          onclick="changeReview('My wife left my for this. Worth it.')"
+        >
           <img class="circle" src="./src/rev-2.jpg" />
           <span>John Gotham</span>
         </a>
-        <a href="#three" class="carousel-item">
+        <a
+          href="#three"
+          class="carousel-item"
+          onclick="changeReview('I could not resist the urge to buy.')"
+        >
           <img class="circle" src="./src/rev-3.jpg" />
           <span>Martina Gomez</span>
         </a>
@@ -64,6 +76,7 @@
         <span><i class="material-icons">star_rate</i></span>
         <span><i class="material-icons">star_rate</i></span>
       </div>
+      <span class="stars">5/5 Stars</span>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -80,14 +93,10 @@
       });
     </script>
     <script>
-      /*document.addEventListener("DOMContentLoaded", function() {
-        var elems = document.querySelectorAll(".sidenav");
-        var instances = M.Sidenav.init(elems);
-      });
-      document.addEventListener("DOMContentLoaded", function() {
-        var elems = document.querySelectorAll(".parallax");
-        var instances = M.Parallax.init(elems, options);
-      });*/
+      const rev_text = document.querySelector(".rev-text");
+      function changeReview(rev) {
+        rev_text.innerHTML = rev;
+      }
     </script>
   </body>
 </html>

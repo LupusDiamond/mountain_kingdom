@@ -56,17 +56,6 @@ body {
   padding: 0.4em 0.1em;
 }
 
-@media screen and (max-width: 1024px) {
-
-  .contain svg {
-    margin-top: 30vw;
-  }
-
-  .contain p {
-    font-size: 12vw;
-  }
-}
-
 
 .circle {
   /*border: 1px solid rgba(255, 255, 255, 0.1); */
@@ -115,4 +104,16 @@ body {
   display: block;
   text-align: center;
   opacity: 0.45;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .contain svg {
+    margin-top: 30vw;
+  }
+
+  .contain p {
+    font-size: 12vw;
+  }
 }

@@ -14,22 +14,32 @@ body {
 
 .contain {
   width: 100%;
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1576235789670-28a9c8e950b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-  background-size: cover;
+  height: 91vh;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
+.bg-img {
+  width: 100%;
+  height: 91vh;
+  background: url("https://images.unsplash.com/photo-1566250445460-b1798251668f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  filter: brightness(0.6);
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
 
 .contain svg {
+  z-index: 2;
   max-width: 90vw;
   margin-top: 5vw;
 }
 
 .contain p {
+  z-index: 2;
   flex-basis: 100%;
   padding-top: 0.1em;
   text-align: center;
@@ -40,20 +50,17 @@ body {
 }
 
 .contain a {
+  z-index: 2;
   margin: auto;
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
-.container h1 {
-  margin-top: 5rem;
-}
-
-.container p {
-  padding: 0.4em 0.1em;
+.container h2 {
+  margin-top: 1em;
 }
 
 
